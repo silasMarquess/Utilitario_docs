@@ -1,0 +1,25 @@
+MODELOS DE IMPLEMENTAÇÃO DA QUITETURA - CLIENTE - SERVIDOR
+
+MODELO DE 2 CAMADA
+
+>> modelo que envolve duas camadas 
+camda de de cliente. Neste caso todas as maquinas eram responsaveis
+pela camada de apresentação e pela regra de negicio ou seja pelo codigo
+
+ MODELO DE 3 CAMADAS:
+ >>>modelo onde foi criado mais um servidor que é o servidor 
+ de aplicação. Dessa forma toda a regra de negocio ficava num servidor separado dessa forma
+quando houvessa uma mudança em algum techo de codigo não era necessario a mudança em todas
+as maquina da rede. No entanto a maquina do cliente ainda precisava de uma sofware que gerava
+a GUI , a camada de apresentação
+
+MODELO DE 4 CAMADAS:
+>>>neste modelo nasceu maus um servidor que era responsavel
+pela camada de apresentação. Esse modelo veio para resolver o problema 
+modelo anterior. modelo anterior a maquina do cliente tinha a responsabilide de gerar
+a a apresentação. Essa limitação foi resolvida . Agora a responsabilidade ficar
+com servidor separado que é o servidor de apresentação. O modelo de 4 camdas é 
+modelo mais atual.
+
+
+

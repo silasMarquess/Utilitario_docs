@@ -1,0 +1,56 @@
+#CONFIURAÇÃO DE USUARIOS
+adduser renan -home /home/renan
+
+>usuario sem acesso ao shel do sistema
+adduser tecdicas -shell /bin/false -home /home/tecdicas
+
+>deletando
+deluser nome
+deluser --remove-home renan
+
+>ADD USUARIO AO GRUPO ESPECIFICO
+usermod -a -G usuariosftp renan
+
+
+
+#CONFIGURAÇÃO DE SSH
+sudo apt install ssh
+
+#Mudando arquivo de CONFIGURAÇÃO
+nano /etc/ssh/sshd_config
+
+>mudar porta da 22 para outras que naõ esteja cocupada
+>tirando acesso root PermitRooLogin no
+>Maximo de  tentativas de conexao MaxAuthTries para 3
+>MaxSessions numero maximo de secões conectadas
+> nao permitir PermitEmptyPasswords no
+
+#CONFIGURANDO FIREWALL
+ufw
+Liberar as portas padroes como , 493, 80, e a porta que foi colocada no Arquivo do SSh
+
+#SERVIDOR WEB
+
+>ver  informacoes de servidor
+hostnamectl
+
+>arquivo hostname
+nano /etc/hostname
+
+>IMPORTANTE CONFIGURA UM DOMINIO DO SERVIDOR COMO SEGUINTE COMACOMANDONDO
+hostnamectl set-hostname <nome, dominio>
+
+>arquivo de hosts
+nano /etc/hosts
+
+>Sumir com Dados Apresentado na tela do navegador , caso nao tenha pagina HTMK
+ServerSignature off
+
+>Instalar Certificado SSL
+apt install python3-certbot-apache
+
+certbot --apache
+
+
+
+

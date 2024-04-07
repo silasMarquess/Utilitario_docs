@@ -1,0 +1,16 @@
+
+PENSAMENTO COMPUTACIONAL
+-solução de problemas baseada em instruções logicas
+que o computador possa execultar de forma sistematica e
+resolver determinado problema
+
+ELEMENTOS DO PENSAMENTO COMPUTACIONAL SEGUNDO Brackmann (2017):
+Decomposição ou Dividir os problemas 
+Abstração
+Reconhecimento de padrões
+algoritimo
+
+
+
+
+
