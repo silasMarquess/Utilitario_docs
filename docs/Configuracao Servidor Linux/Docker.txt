@@ -1,10 +1,19 @@
 #COMANDOS DOCKER
+#Baixa uma imagem se não tiver e entra nessa imagem:
+docker run -it ubuntu (exit para sair do terminal da imagem)
+docker run -it node ( 2x(ctrl + c))
 
 #verifica o status do servico docker
 systemctl status docker
 
 #Ver lista de Imagens do Repositorio local
 docker Imagens
+
+#roda um immagem do ubuntu e mostra o terminal interativo
+docker run -it ubuntu 
+
+#mostrar logs do docker
+docker logs <nome container ou id>
 
 #Baixar Imagem do dockerHub
 docker pull <nome_imagem>
@@ -14,6 +23,18 @@ docker search <termo>
 
 #rodar container
 docker run --name <nome> -d -p <porta/protocolo> <nomeContainer>
+
+#comando para gerar uma imagem apartir de um docker file
+docker build .
+
+#comando para gerar uma imagem apartir de um docker file e aplicar nome
+docker build . -t <nome da imagem>  
+
+#comando remover imagem
+docker rmi <nome ou id da imagem>
+
+#comando limpar arquivos de imagem não utilizado
+docker system prune
 
 #ver lista de conatiner rodando
 docker ps -a

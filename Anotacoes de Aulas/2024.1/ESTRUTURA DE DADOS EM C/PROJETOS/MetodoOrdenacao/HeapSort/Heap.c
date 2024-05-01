@@ -3,6 +3,10 @@
 
 int main()
 {
+    int  numeros[7] = {23,4,67,-8,90,54,21};
+    OrderHeap(numeros,7);
+    printf("");
+    return 0;
 }
 
 void OrderHeap(int *V, int N)
@@ -10,6 +14,14 @@ void OrderHeap(int *V, int N)
     int aux;
     for (int i = (N - 1) / 2; i >= 0; i--)
     {
+        CreatHeap(V,i,N-1);
+    }
+
+    for(int i=(N-1); i>=1;i--){
+    aux = V[0];
+    V[0] = V[i];
+    V[i]= aux;
+    CreatHeap(V,0,i-1);
     }
 }
 

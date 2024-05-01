@@ -1,9 +1,0 @@
-
-<!--Comandos de extração de arquivos-->
-Tipo de arquivo	Comando
-Zip	# gunzip arquivo.zip
-Rar	# unrar x arquivo.rar
-Tar	# tar -xvf arquivo.tar
-Tar.gz	# tar -vzxf arquivo.tar.gz
-Bz2	# bunzip arquivo.bz2    -- ou -- # bunzip2 arquivo.bz2
-Tar.bz2	# tar -jxvf arquivo.tar.bz2
