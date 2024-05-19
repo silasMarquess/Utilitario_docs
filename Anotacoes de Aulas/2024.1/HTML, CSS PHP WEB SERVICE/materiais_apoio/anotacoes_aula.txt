@@ -1,6 +1,0 @@
-AULA -05/02/2024
-----------------------------------------------------
-
-TECNOLOGIA HTML
-    È uma norma que é lida pelo navegador o qual irá organizar 
-os elementos na tela de forma correta
