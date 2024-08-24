@@ -1,4 +1,4 @@
-#include "entidades.c";
+#include "./entities/entidades.c";
 
 double getTotalItem(Item_venda i){
 return i.p.preco * i.qtde;

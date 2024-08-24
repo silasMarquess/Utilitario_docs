@@ -3,9 +3,8 @@ typedef struct
 {
     int id_produto;
     char nome_produto[100];
-    double icms;
-    double preco;
-    enum Categoria_product c;
+    float preco;
+
 }Produto;
 
 enum Categoria_product{

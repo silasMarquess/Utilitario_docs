@@ -3,6 +3,11 @@
 #include <string.h>
 #include "entidades.c"
 
+
+void print(char frase[100]){
+    printf("%s",frase);
+}
+
 int main()
 {
     Aluno alunos[10];
