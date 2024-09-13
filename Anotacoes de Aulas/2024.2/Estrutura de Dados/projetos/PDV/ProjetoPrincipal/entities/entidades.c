@@ -1,10 +1,12 @@
 //lista de entidades
+#include <stdio.h>
+#include <stdlib.h>
+
 typedef struct
 {
     int id_produto;
     char nome_produto[100];
     float preco;
-
 }Produto;
 
 enum Categoria_product{
